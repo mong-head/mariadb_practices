@@ -1,15 +1,16 @@
 # Mariadb practices
 
-* server : linux
-* client : mysql workbench
+* 환경 
+	* server : linux
+	* client : mysql workbench
 
-webdb
+### webdb
 
 * sql-practices01 : create,delete,drop,update
 
 * sql-practices02 : 기본 select 연습
 
-employees 
+### employees 
 
 * 01_basic_select : 기본 select 연습
 
