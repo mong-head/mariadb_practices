@@ -14,6 +14,8 @@
 
 * 01_basic_select : 기본 select 연습
 
+	* practice : hw_1_basic
+
 	* concat
 	* as
 	* in
@@ -21,6 +23,8 @@
 	* order by : 시간이 많이 걸림
 	
 * 02_function
+
+	* practice : hw_2_aggregate
 
 	* 문자열 함수
 	* 숫자 함수
