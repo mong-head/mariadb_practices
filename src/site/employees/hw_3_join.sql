@@ -104,9 +104,8 @@ order by salary desc
 -- 현재, 직책별 평균 연봉을 연봉이 큰 직책 순서대로 출력하세요.
 
 select title, avg(salary)
-from employees e
-join titles t on e.emp_no = t.emp_no
-join salaries s on s.emp_no = e.emp_no
+from titles t
+join salaries s on t.emp_no = s.emp_no
 where t.to_date > current_date and s.to_date > current_date
 group by title
 order by avg(salary) desc
