@@ -28,4 +28,11 @@
 	* 날짜 함수
 	* 집계 함수
 	* practice : hw_2_aggregate
-	
+
+* 03_join
+
+	* inner join
+		* equijoin
+		* join on (standard)
+		* natural join, join ~using (not used)
+	* outer join
