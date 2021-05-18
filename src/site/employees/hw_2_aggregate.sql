@@ -30,6 +30,12 @@ select concat(max(salary),'원') as '최고연봉', concat(min(salary),'원') as
 -- 문제6.
 -- 최고 어린 사원의 나이와 최고 연장자의 나이는?
 
+-- 1. 한국식으로 계산한건 아닌 듯 개월 수로 계산
 select max(cast(period_diff(date_format(current_date,'%Y%m'),date_format(birth_date,'%Y%m'))/12 as int)) as '최고 연장자',
 min(cast(period_diff(date_format(current_date,'%Y%m'),date_format(birth_date,'%Y%m'))/12 as int)) as '최고 어린 사원'
+from employees;
+
+-- 2. 한국식 나이 계산
+select date_format(curdate(),'%Y') - date_format(max(birth_date),'%Y') as '최고 어린 사원',
+       date_format(curdate(),'%Y') - date_format(min(birth_date),'%Y') as '최고 연장자'
 from employees;
