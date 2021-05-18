@@ -87,6 +87,15 @@ having avg_salary > 50000
 order by avg_salary
 ;
 
+-- 현재 직책 급여가 50000이 넘는 직책을 직책, 급여로 급여가 큰 순서대로 출력하시오
+select title, salary
+from employees e
+join titles t on e.emp_no = t.emp_no
+join salaries s on e.emp_no = s.emp_no
+where salary > 50000
+order by salary
+;
+
 -- 문제9.
 -- 현재, 부서별 평균 연봉을 연봉이 큰 부서 순서대로 출력하세요.
 
