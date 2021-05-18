@@ -36,3 +36,12 @@
 		* join on (standard)
 		* natural join, join ~using (not used)
 	* outer join
+	* practice : hw_3_join
+	
+* 04_subquery
+	
+	* from절 subquery
+	* where절 subquery
+		* 단일행 - 단일행 연산자 : = > < <= >= !=
+		* 복수행 - 복수행 연산자 : in, not in, any, all
+		
