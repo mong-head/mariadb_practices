@@ -88,7 +88,7 @@
 
 |DB|결과|
 |---|-----|
-|<img src="https://user-images.githubusercontent.com/52481037/118934740-a54ce100-b985-11eb-9630-156d82e06eae.jpg" width="300" height="300">|<img src="https://user-images.githubusercontent.com/52481037/118942694-ee089800-b98d-11eb-97df-515f19772772.jpg" width="500" height="500">|
+|<img src="https://user-images.githubusercontent.com/52481037/118934740-a54ce100-b985-11eb-9630-156d82e06eae.jpg" width="250" height="250">|<img src="https://user-images.githubusercontent.com/52481037/118942694-ee089800-b98d-11eb-97df-515f19772772.jpg" width="500" height="500">|
 
 * Application : bookshop.main/BookShop.main
 * DAO
