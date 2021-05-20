@@ -49,4 +49,13 @@
 	* practice : hw_4_subquery
 	
 ## jdbc-practices
+
+* test
+	* ConnectionTest : linux server 내의 webdb와 connection test
+	* SelectTest : linux server 내의 employees와 connection 후 sql 실행
+	* InsertTest01 : connection 후 insert문 실행
+	
+* driver
+	* 직접 driver 구현 - connection만
+
 		

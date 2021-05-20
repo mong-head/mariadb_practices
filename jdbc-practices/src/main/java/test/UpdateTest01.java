@@ -1,21 +1,23 @@
 package test;
 
-// 완결된 sql 바로 execute()
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class InsertTest01 {
+public class UpdateTest01 {
 
 	public static void main(String[] args) {
-		
-		insertDepartment("영업");
-		insertDepartment("총무");
+		DeptVo vo = new DeptVo();
+		vo.setNo(4L);
+		vo.setName("전략기획팀");
+		Boolean result = updateDepartment(vo);
+		if(result) {
+			System.out.println("성공적으로 update");
+		}
 	}
-	public static boolean insertDepartment(String name){
+	public static Boolean updateDepartment(DeptVo vo){
 		Connection conn = null;
 		Statement stmt = null;
 		boolean result = false;
@@ -34,7 +36,7 @@ public class InsertTest01 {
 			stmt = conn.createStatement();
 			
 			// 4. SQL실행
-			String sql = "insert into dept values(null,'"+ name +"');";
+			String sql = "update dept set name= "+vo.getName() + " where no = " + vo.getNo();
 			int count = stmt.executeUpdate(sql);
 			
 			result = count == 1;
@@ -62,5 +64,3 @@ public class InsertTest01 {
 		return result;
 	}
 }
-
-

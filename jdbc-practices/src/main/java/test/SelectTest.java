@@ -37,7 +37,7 @@ public class SelectTest {
 				String birthDate = rs.getString(2); //date는 string으로 받으면 됨
 				String firstname = rs.getString(3);
 				
-				System.out.printf("emp num : %ld, birth : %s, first name : %s\n");
+				System.out.println("emp num : "+empNo+" ,birth : "+birthDate+", first name : "+firstname);
 			}
 			
 		} catch (ClassNotFoundException e) {
