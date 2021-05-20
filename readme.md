@@ -65,4 +65,13 @@
 * driver
 	* 직접 driver 구현 - connection만
 
+### DAO pattern
+
+[application] <-- USE : VO --> [DAO] <-- CRUD --> [DB]
+
+* hr 
+	* HRMain  : findByName
+	* HRMain2 : findBySalary
+	* EmployeeDao : connection ~ query
+	* EmployeeVo : employee 정보 객체
 		
