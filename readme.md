@@ -53,7 +53,14 @@
 * test
 	* ConnectionTest : linux server 내의 webdb와 connection test
 	* SelectTest : linux server 내의 employees와 connection 후 sql 실행
-	* InsertTest01 : connection 후 insert문 실행
+	* 완성된 sql문
+		* InsertTest01 : connection 후 insert문 실행
+		* DeleteTest01
+		* UpdateTest01
+	* 완성되지 않은 sql문 : binding
+		* InsertTest02
+		* DeleteTest02
+		* UpdateTest02
 	
 * driver
 	* 직접 driver 구현 - connection만
