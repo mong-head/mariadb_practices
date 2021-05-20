@@ -4,6 +4,8 @@
 	* server : linux
 	* client : mysql workbench
 
+## sql practices (src/site/)
+
 ### webdb
 
 * sql-practices01 : create,delete,drop,update
@@ -45,4 +47,6 @@
 		* 단일행 - 단일행 연산자 : = > < <= >= !=
 		* 복수행 - 복수행 연산자 : in, not in, any, all
 	* practice : hw_4_subquery
+	
+## jdbc-practices
 		
