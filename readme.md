@@ -6,13 +6,13 @@
 
 ## 1. sql practices (src/site/)
 
-### 1) webdb
+#### 1) webdb
 
 * sql-practices01 : create,delete,drop,update
 
 * sql-practices02 : 기본 select 연습
 
-### 2) employees 
+#### 2) employees 
 
 * 01_basic_select : 기본 select 연습
 
@@ -54,7 +54,7 @@
 
 [application] <-- CRUD --> [DB]
 
-* 1) test
+#### 1) test
 	* ConnectionTest : linux server 내의 webdb와 connection test
 	* SelectTest : linux server 내의 employees와 connection 후 sql 실행
 	* 완성된 sql문
@@ -66,14 +66,14 @@
 		* DeleteTest02
 		* UpdateTest02
 	
-* 2) driver
+#### 2) driver
 	* 직접 driver 구현 - connection만
 
 ### 2-2. DAO pattern
 
 [application] <-- USE : VO --> [DAO] <-- CRUD --> [DB]
 
-* 1) hr 
+#### 1) hr 
 	* HRMain  : findByName
 	* HRMain2 : findBySalary
 	* EmployeeDao : connection ~ query
