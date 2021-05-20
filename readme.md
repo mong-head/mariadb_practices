@@ -55,6 +55,7 @@
 [application] <-- CRUD --> [DB]
 
 #### 1) test
+
 	* ConnectionTest : linux server 내의 webdb와 connection test
 	* SelectTest : linux server 내의 employees와 connection 후 sql 실행
 	* 완성된 sql문
@@ -67,6 +68,7 @@
 		* UpdateTest02
 	
 #### 2) driver
+
 	* 직접 driver 구현 - connection만
 
 ### 2-2. DAO pattern
@@ -74,6 +76,7 @@
 [application] <-- USE : VO --> [DAO] <-- CRUD --> [DB]
 
 #### 1) hr 
+
 	* HRMain  : findByName
 	* HRMain2 : findBySalary
 	* EmployeeDao : connection ~ query
