@@ -77,8 +77,10 @@
 
 #### 1) hr 
 
-* HRMain  : findByName - 사원 이름 입력 받아서 사원 정보 출력
-* HRMain2 : findBySalary - 최소 봉급 및 최대 봉급 입력받아 사원 정보 출력
+* HRMain  : findByName 사용 - 사원 이름 입력 받아서 사원 정보 출력
+* HRMain2 : findBySalary 사용 - 최소 봉급 및 최대 봉급 입력받아 사원 정보 출력
 * EmployeeDao : connection ~ query
+	* findByName
+	* findBySalary
 * EmployeeVo : employee 정보 객체
 		
