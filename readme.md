@@ -4,15 +4,15 @@
 	* server : linux
 	* client : mysql workbench
 
-## sql practices (src/site/)
+## 1. sql practices (src/site/)
 
-### webdb
+### 1) webdb
 
 * sql-practices01 : create,delete,drop,update
 
 * sql-practices02 : 기본 select 연습
 
-### employees 
+### 2) employees 
 
 * 01_basic_select : 기본 select 연습
 
@@ -48,9 +48,13 @@
 		* 복수행 - 복수행 연산자 : in, not in, any, all
 	* practice : hw_4_subquery
 	
-## jdbc-practices
+## 2. jdbc-practices
 
-* test
+### 2-1. JDBC practices
+
+[application] <-- CRUD --> [DB]
+
+* 1) test
 	* ConnectionTest : linux server 내의 webdb와 connection test
 	* SelectTest : linux server 내의 employees와 connection 후 sql 실행
 	* 완성된 sql문
@@ -62,14 +66,14 @@
 		* DeleteTest02
 		* UpdateTest02
 	
-* driver
+* 2) driver
 	* 직접 driver 구현 - connection만
 
-### DAO pattern
+### 2-2. DAO pattern
 
 [application] <-- USE : VO --> [DAO] <-- CRUD --> [DB]
 
-* hr 
+* 1) hr 
 	* HRMain  : findByName
 	* HRMain2 : findBySalary
 	* EmployeeDao : connection ~ query
