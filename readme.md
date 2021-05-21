@@ -97,3 +97,54 @@
 * VO (DB대로함)
 	* AuthorVo
 	* BookVo
+	
+## 3. bookmall
+
+* modeling
+![K-037](https://user-images.githubusercontent.com/52481037/119115015-a8b59a80-ba61-11eb-9d2b-a6dc262f3c80.jpg)
+
+
+* 결과
+```text
+====================Category====================
+category 입력 성공
+category 입력 성공
+category 입력 성공
+CategoryVo [no=1, name=소설]
+CategoryVo [no=2, name=경제]
+CategoryVo [no=3, name=컴퓨터/IT]
+============================================
+====================Book====================
+book 입력 성공
+book 입력 성공
+book 입력 성공
+BookVo [no=1, title=소설1, price=10000, categoryVo=CategoryVo [no=1, name=소설]]
+BookVo [no=2, title=경제1, price=20000, categoryVo=CategoryVo [no=2, name=경제]]
+BookVo [no=3, title=경제2, price=50000, categoryVo=CategoryVo [no=2, name=경제]]
+============================================
+====================Customer====================
+customer 입력 성공
+customer 입력 성공
+CustomerVo [no=1, name=고객1, email=one@gmail.com, phone=010-2222-2222, password=1111*]
+CustomerVo [no=2, name=고객2, email=two@gmail.com, phone=010-1122-3344, password=3333&]
+============================================
+====================Order====================
+order 입력 성공
+OrderVo [no=1, order_info=20210909-123A, payment=15000, address=부산시 남구 오륙도로85, customerVo=CustomerVo [no=1, name=고객1, email=one@gmail.com, phone=010-2222-2222, password=1111*]]
+============================================
+====================Cart====================
+cart 입력 성공
+cart 입력 성공
+cart 입력 성공
+CartVo [customerVo=CustomerVo [no=2, name=고객2, email=two@gmail.com, phone=010-1122-3344, password=3333&], bookVo=BookVo [no=3, title=경제2, price=50000, categoryVo=CategoryVo [no=2, name=경제]], num=5]
+CartVo [customerVo=CustomerVo [no=1, name=고객1, email=one@gmail.com, phone=010-2222-2222, password=1111*], bookVo=BookVo [no=1, title=소설1, price=10000, categoryVo=CategoryVo [no=1, name=소설]], num=10]
+CartVo [customerVo=CustomerVo [no=2, name=고객2, email=two@gmail.com, phone=010-1122-3344, password=3333&], bookVo=BookVo [no=2, title=경제1, price=20000, categoryVo=CategoryVo [no=2, name=경제]], num=2]
+============================================
+====================OrderBook====================
+OrderBook 입력 성공
+OrderBook 입력 성공
+OrderBookVo [bookVo=BookVo [no=1, title=소설1, price=10000, categoryVo=CategoryVo [no=1, name=null]], orderVo=OrderVo [no=1, order_info=20210909-123A, payment=15000, address=부산시 남구 오륙도로85, customerVo=CustomerVo [no=1, name=null, email=null, phone=null, password=null]], price=8000, num=2]
+OrderBookVo [bookVo=BookVo [no=3, title=경제2, price=50000, categoryVo=CategoryVo [no=2, name=null]], orderVo=OrderVo [no=1, order_info=20210909-123A, payment=15000, address=부산시 남구 오륙도로85, customerVo=CustomerVo [no=1, name=null, email=null, phone=null, password=null]], price=5000, num=5]
+============================================
+
+```
