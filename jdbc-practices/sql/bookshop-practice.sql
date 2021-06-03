@@ -16,3 +16,6 @@ join author a on b.author_no = a.no;
 -- Book : insert
 -- insert into book values(null,'풀하우스','대여가능', 1);
 
+-- Book : update
+-- update book set status = '대여가능' where no = 1;
+
